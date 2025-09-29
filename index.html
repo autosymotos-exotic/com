@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carros & Motos</title>
+  <!-- Enlazamos el CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navegación -->
+  <header>
+    <div class="brand">
+      <div class="logo">C&M</div>
+      <h1>Carros &amp; Motos</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#carros">Carros</a></li>
+        <li><a href="#motos">Motos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO: Presentación principal -->
+  <main class="hero" id="inicio">
+    <div class="intro">
+      <h2>La pasión por los motores, en un solo lugar</h2>
+      <p>Comparativas, fotos y fichas técnicas de carros y motos. Diseñado para que encuentres rápido lo que buscas: desde la deportiva más agresiva hasta la pickup para el trabajo.</p>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="#carros">Ver Carros</a>
+        <a class="btn btn-secondary" href="#motos">Ver Motos</a>
+      </div>
+    </div>
+
+    <aside class="visual" aria-hidden="false">
+      <img src="r1.jpg" alt="Carro y moto destacados">
+      <div class="caption">
+        <h3>Destacados del mes</h3>
+        <p>BMW M3 / Yamaha R1 — Reseñas, precios y especificaciones.</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- SECCIÓN 2: Carros -->
+  <section id="carros" class="carros">
+    <div class="container">
+      <h2>Carros Destacados</h2>
+      <p>Explora algunos de los modelos más buscados del año.</p>
+
+      <div class="grid">
+        <figure class="card">
+          <img src="mustanggt.jpg" alt="Ford Mustang GT">
+          <figcaption>
+            <h3>Ford Mustang GT</h3>
+            <p>V8 • 450 HP • Deportivo clásico americano</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="bmwm3.jpg" alt="BMW M3">
+          <figcaption>
+            <h3>BMW M3</h3>
+            <p>3.0L Twin Turbo • 503 HP • Tracción trasera</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="camaross.jpg" alt="Chevrolet Camaro SS">
+          <figcaption>
+            <h3>Chevrolet Camaro SS</h3>
+            <p>V8 • 455 HP • Diseño agresivo y moderno</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: Motos -->
+  <section id="motos" class="motos">
+    <div class="container">
+      <h2>Motos Destacadas</h2>
+      <p>Explora algunos de los modelos más buscados del año.</p>
+
+      <div class="grid">
+        <figure class="card">
+          <img src="r1.jpg" alt="Yamaha R1">
+          <figcaption>
+            <h3>Yamaha R1</h3>
+            <p>1000cc • 200 HP • Deportiva supersport</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="Kawasaki Ninja ZX-10R.jpg" alt="Kawasaki Ninja ZX-10R">
+          <figcaption>
+            <h3>Kawasaki Ninja ZX-10R</h3>
+            <p>998cc • 203 HP • Moto deportiva de alto rendimiento</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="KTM Duke 390.jpg" alt="KTM Duke 390">
+          <figcaption>
+            <h3>KTM Duke 390</h3>
+            <p>373cc • 44 HP • Naked ágil y ligera para ciudad</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+<!-- SECCIÓN 4: Galería -->
+<section id="galeria" class="galeria">
+  <div class="container">
+    <h2>Galería de Imágenes</h2>
+    <p>Disfruta de fotos de los mejores carros y motos en acción.</p>
+
+    <div class="grid">
+      <figure class="card">
+        <img src="deportivo.jpg" alt="Carro deportivo">
+      </figure>
+      <figure class="card">
+        <img src="h2r.jpg" alt="Moto deportiva">
+      </figure>
+      <figure class="card">
+        <img src="clasico.jpg" alt="Carro clásico">
+      </figure>
+      <figure class="card">
+        <img src="naketd.jpg" alt="Moto naked">
+      </figure>
+      <figure class="card">
+        <img src="suv.jpg" alt="SUV moderno">
+      </figure>
+      <figure class="card">
+        <img src="touring.jpg" alt="Moto touring">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: Contacto -->
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>Escríbenos para cualquier duda o comentario.</p>
+
+    <form class="contact-form">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje...¡¡NOTA ESTO ES SOLO DE PRUEBA NO TIENE UN CONTACTO REAL!!" required></textarea>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <small>© 2025 Carros & Motos</small>
+  </footer>
+</body>
+</html>
